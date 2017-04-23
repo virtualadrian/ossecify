@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/virtualadrian/ossecify#readme",
   "dependencies": {
+    "argparse": "^1.0.9",
     "line-by-line": "^0.1.5"
   }
 }
