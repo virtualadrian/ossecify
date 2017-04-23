@@ -4,7 +4,7 @@
   "description": "An OSSEC generated JSON beautification tool.",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js -f log.json"
+    "test": "node app.js -f log.json -o log.fix.json"
   },
   "repository": {
     "type": "git",

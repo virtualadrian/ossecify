@@ -1,21 +1,10 @@
-const LineByLineReader = require('line-by-line'),
-const Parserrequire('argparse').ArgumentParser;
-var ap = new ArgumentParser({
-  version: '0.0.1',
-  addHelp:true,
-  description: 'Argparse example'
-});
+import {OssecifyService, ArgumentService} from "./src";
 
-// input file parameter
-ap.addArgument([ '-f', '--file' ], {
-    help: 'The JSON file to beautify.'
-});
+// create parser services
+const argService = new ArgumentService();
+const beautyService = new OssecifyService(argService.parseAll());
 
-// output file parameter
-ap.addArgument([ '-o', '--out' ], {
-    help: 'The output file post beautify.'
-});
+// trigger the beautify
+beautyService.beautify();
 
-const args = ap.parseArgs();
-const lr = new LineByLineReader(ap.file);
-
+console.log("Done");
