@@ -1,0 +1,27 @@
+{
+  "name": "ossecify",
+  "version": "1.0.0",
+  "description": "An OSSEC generated JSON beautification tool.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js -f log.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virtualadrian/ossecify.git"
+  },
+  "keywords": [
+    "OSSEC",
+    "JSON",
+    "beautify"
+  ],
+  "author": "Adrian Pavelescu, Brandon Rice",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/virtualadrian/ossecify/issues"
+  },
+  "homepage": "https://github.com/virtualadrian/ossecify#readme",
+  "dependencies": {
+    "line-by-line": "^0.1.5"
+  }
+}
